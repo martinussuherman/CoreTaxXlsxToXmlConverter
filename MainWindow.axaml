@@ -1,0 +1,37 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="CoreTaxXlsxToXmlConverter.MainWindow"
+        BorderBrush="Gold"
+        BorderThickness="2"
+        Icon="/Assets/export-xml-256.png"
+        SizeToContent="Height"
+        Title="CoreTax Excel Converter">
+    <Grid 
+        ColumnDefinitions="*" 
+        RowDefinitions="Auto,Auto" 
+        Margin="4">
+        <TextBlock 
+            Grid.Column="0"
+            Grid.Row="0" 
+            HorizontalAlignment="Center"
+            Margin="6 20"
+            Name="statusTextBlock" 
+            Padding="4"
+            Text="" />
+        <Button 
+            BorderBrush="Gold"
+            BorderThickness="2"
+            Click="OpenXslxClickHandler" 
+            Content="Select Xlsx File" 
+            CornerRadius="16"
+            Grid.Row="1" 
+            Grid.Column="0"
+            HorizontalAlignment="Center"
+            Margin="4 6 4 30"
+            Name="selectXlsxButton" 
+            Padding="24 12" />
+    </Grid>
+</Window>
